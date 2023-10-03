@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu do Restaurante</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="entrada">
+        <h2>Escolha sua Entrada:</h2>
+        <input type="radio" name="entrada" value="Sopa de legumes" data-img="entrada1.jpg" onclick="selecionarEntrada(this)"> Sopa de legumes
+        <input type="radio" name="entrada" value="Bolinho de carne" data-img="entrada2.jpg" onclick="selecionarEntrada(this)"> Bolinho de carne
+        <input type="radio" name="entrada" value="Batatas fritas" data-img="entrada3.jpg" onclick="selecionarEntrada(this)"> Batatas fritas
+    </div>
+
+    <div id="prato-principal">
+        <h2>Escolha seu Prato Principal:</h2>
+        <input type="radio" name="prato-principal" value="Estrogonofe de frango" data-img="prato1.jpg" onclick="selecionarPratoPrincipal(this)"> Estrogonofe de frango
+        <input type="radio" name="prato-principal" value="Feijoada" data-img="prato2.jpg" onclick="selecionarPratoPrincipal(this)"> Feijoada
+        <input type="radio" name="prato-principal" value="Macarronada" data-img="prato3.jpg" onclick="selecionarPratoPrincipal(this)"> Macarronada
+        <input type="radio" name="prato-principal" value="Cozido" data-img="prato4.jpg" onclick="selecionarPratoPrincipal(this)"> Cozido
+        <input type="radio" name="prato-principal" value="Comida baiana" data-img="prato5.jpg" onclick="selecionarPratoPrincipal(this)"> Comida baiana
+    </div>
+
+    <div id="sobremesa">
+        <h2>Escolha sua Sobremesa:</h2>
+        <input type="radio" name="sobremesa" value="Pudim tradicional" data-img="sobremesa1.jpg" onclick="selecionarSobremesa(this)"> Pudim tradicional
+        <input type="radio" name="sobremesa" value=" Sorvete" data-img="sobremesa2.jpg" onclick="selecionarSobremesa(this)"> Sorvete
+        <input type="radio" name="sobremesa" value="Salada de frutas" data-img="sobremesa3.jpg" onclick="selecionarSobremesa(this)"> Salada de frutas
+    </div>
+
+    <button onclick="exibirMenuFinal()">Confirmar Pedido</button>
+
+    <div id="menu-final"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
